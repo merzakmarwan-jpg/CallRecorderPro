@@ -16,7 +16,7 @@ jobs:
 
       - name: Extract Android project
         run: |
-          unzip -q CallRecorderPro_GitHub.zip -d extracted
+          unzip -q CallRecorderProGitHub.zip -d extracted
           PROJECT_DIR=$(find extracted -type f \( -name settings.gradle.kts -o -name settings.gradle \) -print -quit | xargs dirname)
           echo "PROJECT_DIR=$PROJECT_DIR" >> "$GITHUB_ENV"
 
